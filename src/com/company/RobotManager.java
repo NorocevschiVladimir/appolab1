@@ -6,5 +6,4 @@ public interface RobotManager {
 
     void getRobotSerial();
 
-    void getCar();
 }

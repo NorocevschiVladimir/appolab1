@@ -5,14 +5,17 @@ public class Main {
     public static void main(String[] args) {
         // Создаем объекта класса RobotExt - X, Y, course
         // Абстракция это разбиение на несколько классов.
+        /// хороший код
         Robot robot1 = new Robot();
-        System.out.println("Движения первого робота: ");
+        Car car = new Car();
+        car.getCar();
+        car.getCarDetails();
 
-        ///плохой код
         robot1.getRobotName();
         robot1.getRobotSerial();
-        robot1.getCar();
-        ///
+///
+
+        System.out.println("Движения первого робота: ");
         robot1.forward(20);
         robot1.setCourse(90);
         robot1.printCoordinatesForward();

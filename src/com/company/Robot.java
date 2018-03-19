@@ -63,8 +63,4 @@ public class Robot implements RobotManager
         System.out.println("Robot Serial 1");
     }
 
-    @Override
-    public void getCar() {
-        System.out.println("Car Audi");
-    }
 }
