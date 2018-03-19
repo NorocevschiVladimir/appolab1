@@ -1,8 +1,9 @@
 package com.company;
 
 
+import sun.rmi.runtime.Log;
 
-public class Robot
+public class Robot implements RobotManager
 {
     // Текущая координата X
     private double x = 0; // когда использую только в этом классе, переменную
@@ -50,5 +51,20 @@ public class Robot
 
     public void setCourse(double course) {
         this.course = course;
+    }
+
+    @Override
+    public void getRobotName() {
+        System.out.println("Robot Name Vasea");
+    }
+
+    @Override
+    public void getRobotSerial() {
+        System.out.println("Robot Serial 1");
+    }
+
+    @Override
+    public void getCar() {
+        System.out.println("Car Audi");
     }
 }

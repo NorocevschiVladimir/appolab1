@@ -7,6 +7,12 @@ public class Main {
         // Абстракция это разбиение на несколько классов.
         Robot robot1 = new Robot();
         System.out.println("Движения первого робота: ");
+
+        ///плохой код
+        robot1.getRobotName();
+        robot1.getRobotSerial();
+        robot1.getCar();
+        ///
         robot1.forward(20);
         robot1.setCourse(90);
         robot1.printCoordinatesForward();
