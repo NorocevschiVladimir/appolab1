@@ -37,25 +37,13 @@ public class Robot implements RobotManager
     }
 
 
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public double getCourse() {
-        return course;
-    }
-
     public void setCourse(double course) {
         this.course = course;
     }
 
     @Override
-    public void getRobotName() {
-        System.out.println("Robot Name Vasea");
+    public void getRobotName(String name) {
+        System.out.println("Robot Name "+ name);
     }
 
     @Override

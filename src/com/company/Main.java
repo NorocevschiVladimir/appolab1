@@ -7,11 +7,13 @@ public class Main {
         // Абстракция это разбиение на несколько классов.
         /// хороший код
         Robot robot1 = new Robot();
+        RobotPrinter robotPrinter = new RobotPrinter(new RobotAuthor("Robot Q1","Author VOVa",21));
+        robotPrinter.printText();
         Car car = new Car();
         car.getCar();
         car.getCarDetails();
 
-        robot1.getRobotName();
+        robot1.getRobotName("Vladimir");
         robot1.getRobotSerial();
 ///
 

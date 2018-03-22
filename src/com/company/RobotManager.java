@@ -2,7 +2,7 @@ package com.company;
 
 public interface RobotManager {
 
-    void getRobotName();
+    void getRobotName(String user);
 
     void getRobotSerial();
 
