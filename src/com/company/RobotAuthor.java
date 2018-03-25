@@ -1,7 +1,7 @@
 package com.company;
 // модель
 public class RobotAuthor {
-
+// •Single responsibility (принцип единственной ответственности)
         String text;
         String author;
         int length;

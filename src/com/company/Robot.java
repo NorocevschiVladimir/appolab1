@@ -1,8 +1,6 @@
 package com.company;
 
 
-import sun.rmi.runtime.Log;
-
 public class Robot implements RobotManager
 {
     // Текущая координата X
@@ -44,6 +42,11 @@ public class Robot implements RobotManager
     @Override
     public void getRobotName(String name) {
         System.out.println("Robot Name "+ name);
+    }
+
+    @Override
+    public void setRobotName(String user) {
+        System.out.println("name " + user);
     }
 
     @Override

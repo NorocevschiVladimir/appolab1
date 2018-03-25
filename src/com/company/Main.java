@@ -12,6 +12,8 @@ public class Main {
         Car car = new Car();
         car.getCar();
         car.getCarDetails();
+        Main calculate = new Main();
+        calculate.calculate(new GeneratoreMethod()); // liskov
 
         robot1.getRobotName("Vladimir");
         robot1.getRobotSerial();
@@ -45,5 +47,10 @@ public class Main {
         robot.back(10);
         // Напечатать координаты
         robot.printCoordinatesBack();
+    }
+
+    public void calculate(Robot r) {
+        r.setCourse(45);
+        r.forward(30);
     }
 }
