@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,6 +20,12 @@ public class Main {
 
         robot1.getRobotName("Vladimir");
         robot1.getRobotSerial();
+
+
+        List<WeatherSource> weatherSources = new ArrayList<>();
+        weatherSources.add(() -> 120.0f);
+        WeatherAggregator weatherAggregator = new WeatherAggregator(weatherSources);
+        weatherAggregator.getTemperatureRobot();
 ///
 
         System.out.println("Движения первого робота: ");
