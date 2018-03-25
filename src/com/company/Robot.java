@@ -4,9 +4,9 @@ package com.company;
 public class Robot implements RobotManager
 {
     // Текущая координата X
-    private double x = 0; // когда использую только в этом классе, переменную
+      double x = 0; // когда использую только в этом классе, переменную
     // Текущая координата Y
-    private double y = 0;
+     double y = 0;
     // Текущий курс (в градусах)
     private double course = 0;
 

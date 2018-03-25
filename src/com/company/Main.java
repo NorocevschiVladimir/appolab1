@@ -16,13 +16,22 @@ public class Main {
         car.getCar();
         car.getCarDetails();
         Main calculate = new Main();
-        calculate.calculate(new GeneratoreMethod()); // liskov
+        calculate.calculate(new GeneratoreMethod()); // liskov substitution
 
         robot1.getRobotName("Vladimir");
         robot1.getRobotSerial();
+        robot1.setCourse(45);
+
+        //open - заполняем данные здесь
+        //close - с ними делаем операции, но мы их не видим. В классе не видно какие операции мы выполняем.
+        AreaCalculator areaCalculator = new AreaCalculator(); // создаем объект
+        Robot robot2 = new Robot();
+        robot2.y = 40;
+        robot2.x = 59;
+        areaCalculator.calculateRectangleArea(robot2);
 
 
-        List<WeatherSource> weatherSources = new ArrayList<>();
+        List<WeatherSource> weatherSources = new ArrayList<>(); // dependency inversion
         weatherSources.add(() -> 120.0f);
         WeatherAggregator weatherAggregator = new WeatherAggregator(weatherSources);
         weatherAggregator.getTemperatureRobot();
