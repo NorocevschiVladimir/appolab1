@@ -2,8 +2,14 @@ package com.company;
 
 public interface CarManager {
 
-    void getCar();
+    String getCar();
 
-    void getCarDetails();
+    String getCarDetails();
+
+      String getAllDetails();
+
+    String setCar(String car );
+
+    String setCarDetails(String cardetails);
 
 }

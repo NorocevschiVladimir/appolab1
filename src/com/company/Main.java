@@ -12,9 +12,24 @@ public class Main {
         Robot robot1 = new Robot();
         RobotPrinter robotPrinter = new RobotPrinter(new RobotAuthor("Robot Q1","Author VOVa",21));
         robotPrinter.printText();
+        robot1.width = 20;
+        robot1.length = 20;
+
+        Circle circle = new Circle();
+        circle.radius = 40;
+        circle.calculateArea();
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.length = 20;
+        rectangle.width = 23;
+        rectangle.calculateArea();
+
+
         Car car = new Car();
         car.getCar();
         car.getCarDetails();
+
+        //Наследующий класс должен дополнять, а не замещать поведение базового класса.
         Main calculate = new Main();
         calculate.calculate(new GeneratoreMethod()); // liskov substitution
 
@@ -24,18 +39,18 @@ public class Main {
 
         //open - заполняем данные здесь
         //close - с ними делаем операции, но мы их не видим. В классе не видно какие операции мы выполняем.
+        //класс легко расширяемый без изменения самого класса
         AreaCalculator areaCalculator = new AreaCalculator(); // создаем объект
         Robot robot2 = new Robot();
         robot2.y = 40;
         robot2.x = 59;
-        areaCalculator.calculateRectangleArea(robot2);
 
 
         List<WeatherSource> weatherSources = new ArrayList<>(); // dependency inversion
         weatherSources.add(() -> 120.0f);
         WeatherAggregator weatherAggregator = new WeatherAggregator(weatherSources);
         weatherAggregator.getTemperatureRobot();
-///
+//
 
         System.out.println("Движения первого робота: ");
         robot1.forward(20);

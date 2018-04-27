@@ -9,6 +9,8 @@ public class Robot implements RobotManager
      double y = 0;
     // Текущий курс (в градусах)
     private double course = 0;
+    double length;
+    double width;
 
     //конструктор
     public Robot() {
